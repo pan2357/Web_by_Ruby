@@ -1,0 +1,16 @@
+<h1>Ex2#loop</h1>
+<% if @a == false || @b == false %>
+	<% if @a == false %>
+		Please provide parameter a
+		<br>
+	<% end %>
+	<% if @b == false %>
+		Please provide parameter b
+		<br>
+	<% end %>
+<% else %>
+	<%for i in (@a..@b).to_a %>
+		<%= i %>
+		<br>
+	<% end %>
+<% end %>
