@@ -6,13 +6,13 @@ class Ex2Controller < ApplicationController
     @foundA = false
     @foundB = false
 
-    if paramA != paramA.to_i.to_s
+    if paramA!='0' && paramA.to_i==0
       @a = false
     else
       @a = paramA.to_i
     end
 
-    if paramB != paramB.to_i.to_s
+    if paramB!='0' && paramB.to_i==0
       @b = false
     else
       @b = paramB.to_i
