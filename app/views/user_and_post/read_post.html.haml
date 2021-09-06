@@ -1,0 +1,13 @@
+%h1 Read Post
+- if @a==nil
+	= 'No user with that id.'
+- else
+	%strong
+		= 'There are '
+		= @a.count
+		= 'post(s)'
+	%br
+	%br
+	- @a.each do |p|
+		= p.msg
+		%br
