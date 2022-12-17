@@ -3,11 +3,9 @@
 	= 'No user with that id.'
 - else
 	%strong
-		= 'There are '
-		= @a.count
-		= 'post(s)'
-	%br
-	%br
+		%p
+			= 'There are '
+			= @a.count
+			= 'post(s)'
 	- @a.each do |p|
-		= p.msg
-		%br
+		%p #{p.msg}
